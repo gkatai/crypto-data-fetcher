@@ -1,0 +1,6 @@
+{
+  "pair": ["XBT/EUR"],
+  "trades": true,
+  "orderBook": true,
+  "depth": 10
+}
