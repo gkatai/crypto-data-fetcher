@@ -2,5 +2,5 @@
   "pair": ["XBT/EUR"],
   "trades": true,
   "orderBook": true,
-  "depth": 10
+  "depth": 100
 }
