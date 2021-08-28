@@ -6,11 +6,11 @@ let config = JSON.parse(rawdata);
 console.log(config);
 
 const ws = new WebSocket("wss://ws.kraken.com");
-const tradesStream = fs.createWriteStream("trades.txt");
-const askSnapshotStream = fs.createWriteStream("ask-snapshot.txt");
-const bidSnapshotStream = fs.createWriteStream("bid-snapshot.txt");
-const askOrderbookStream = fs.createWriteStream("ask-orderbook.txt");
-const bidOrderbookStream = fs.createWriteStream("bid-orderbook.txt");
+const tradesStream = fs.createWriteStream("files/trades.txt");
+const askSnapshotStream = fs.createWriteStream("files/ask-snapshot.txt");
+const bidSnapshotStream = fs.createWriteStream("files/bid-snapshot.txt");
+const askOrderbookStream = fs.createWriteStream("files/ask-orderbook.txt");
+const bidOrderbookStream = fs.createWriteStream("files/bid-orderbook.txt");
 
 ws.on("open", function open() {
   console.log("Connected to kraken websocket");
